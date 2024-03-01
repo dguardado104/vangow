@@ -1,0 +1,16 @@
+{
+  "translation": {
+    "commons": {
+      "buttons": {
+        "readMore": "Más información"
+      }
+    },
+    "pages": {
+      "home": {
+        "section1": {
+          "description": "Vangow es una nueva forma de comprar activos inmobiliarios. Te ayudamos a encontrar la casa de vacaciones de tus sueños y a ser copropietario de una parte de ella fácilmente."
+        }
+      }
+    }
+  }
+}
