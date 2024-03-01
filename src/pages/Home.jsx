@@ -1,26 +1,27 @@
 
 import { Link } from "react-router-dom"
+import GetInTouch from "../components/GetInTouch"
 
 export default function Home() {
 
   return (
     <main className="text-secondary">
       <section className="bg-[#222] h-screen w-full relative overflow-hidden">
-        <video className="w-full aspect-video" src="/video-home.mp4" muted autoPlay loop></video>
+        <video className="h-full w-full object-cover object-top animate-duration-[2s] animate-ease-in-out" src="/video-home.mp4" muted autoPlay loop></video>
         <div className="absolute top-1/2 -translate-y-1/2  left-1/2 z-10 -translate-x-1/2 text-center text-white">
           <div className="flex justify-center">
             <img src="/hero.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[19px] ">EST.2024</span>
-            <span className="text-[93px] ">Luxury<span className="text-[95px]">Second</span></span>
-            <span className="text-[93px] leading-3"><span className="text-[95px]">Home</span>Club</span>
+            <span className="text-xl ">EST.2024</span>
+            <span className="text-5xl">Luxury<span className="text-6xl">Second</span></span>
+            <span className="text-6xl"><span className="text-6xl">Home</span>Club</span>
           </div>
           <Link to="/listings" className="text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
         </div>
-        <div className="absolute bottom-4 left-4 w-96 text-white text-[22px] text-justify">
+        <div className="absolute bottom-4 left-4 w-96 text-white text-justify hidden md:block">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis ad velit nostrum, molestias nemo inventore quasi iste tempora saepe? Reprehenderit fuga possimus magnam nostrum! Maxime repudiandae recusandae fugit vel!
+            Vangow is a new way to buy real estate assets. We help you to find your dreamed vacation home and easily co-own a part of it.
           </p>
         </div>
       </section>
@@ -237,6 +238,7 @@ export default function Home() {
         </div>
 
       </section>
+      <GetInTouch />
     </main>
   )
 }
