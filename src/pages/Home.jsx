@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom"
 import GetInTouch from "../components/GetInTouch"
+import Box from "../components/Box"
 
 export default function Home() {
 
@@ -16,8 +17,9 @@ export default function Home() {
             <span className="text-xl ">EST.2024</span>
             <span className="text-5xl">Luxury<span className="text-6xl">Second</span></span>
             <span className="text-6xl"><span className="text-6xl">Home</span>Club</span>
+            <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
           </div>
-          <Link to="/listings" className="text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
+
         </div>
         <div className="absolute bottom-4 left-4 w-96 text-white text-justify hidden md:block">
           <p>
@@ -63,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <div className="my-14 ">
-            <Link to="/how-it-works" className="text-white bg-primary py-3 px-8 rounded-lg  transition-all hover:scale-105 hover:bg-secondary" >How it works</Link>
+            <Link to="/learns" className="text-white bg-primary py-3 px-8 rounded-lg  transition-all hover:scale-105 hover:bg-secondary" >How it works</Link>
           </div>
           <div className="border-secondary border-b-[1px] w-full mt-14 hidden md:block"></div>
         </section>
@@ -128,59 +130,29 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
 
-            <div className="border-secondary border-[1px]">
-              <div style={{ backgroundImage: "url(/bgs/gray-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Property oversight</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                Vangow oversees local vendor management, cleaning, security, home repairs, landscaping, interior design upgrades and more.
-              </p>
-            </div>
+            <Box backgroundImage={"url(/bgs/gray-bg.webp)"} title={"Property oversight"}>
+              Vangow oversees local vendor management, cleaning, security, home repairs, landscaping, interior design upgrades and more.
+            </Box>
+            
+            <Box backgroundImage={"url(/bgs/sky-bg.webp)"} title={"Easy Scheduling"}>
+              We invest in software development and improvements to the Vangow app and <strong>Intellistay™</strong> scheduling technology.
+            </Box>
 
-            <div className="border-secondary border-[1px]">
-              <div style={{ backgroundImage: "url(/bgs/sky-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Easy Scheduling</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                We invest in software development and improvements to the Vangow app and <strong>Intellistay™</strong> scheduling technology.
-              </p>
-            </div>
+            <Box backgroundImage={"url(/bgs/gray-bg.webp)"} title={"Owner support"} className={"md:hidden"}>
+              A dedicated Vangow crew member will provide onboarding and ongoing support as your home’s owner representative and manager.
+            </Box>
 
-            <div className="border-secondary border-[1px] md:hidden">
-              <div style={{ backgroundImage: "url(/bgs/gray-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Owner support</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                A dedicated Vangow crew member will provide onboarding and ongoing support as your home’s owner representative and manager.
-              </p>
-            </div>
+            <Box backgroundImage={"url(/bgs/sky-bg.webp)"} title={"Company guarantee"} className={"md:hidden"}>
+              Vangow guarantees the other owners in the company. If one owner defaults the monthly payments, Vangow steps in, the co-owners are protected.
+            </Box>
 
-            <div className="border-secondary border-[1px] md:hidden">
-              <div style={{ backgroundImage: "url(/bgs/sky-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Company guarantee</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                Vangow guarantees the other owners in the company. If one owner defaults the monthly payments, Vangow steps in, the co-owners are protected.
-              </p>
-            </div>
+            <Box backgroundImage={"url(/bgs/sky-bg.webp)"} title={"Owner support"} className={"md:block hidden"}>
+              A dedicated Vangow crew member will provide onboarding and ongoing support as your home’s owner representative and manager.
+            </Box>
 
-            <div className="border-secondary border-[1px] md:block hidden">
-              <div style={{ backgroundImage: "url(/bgs/sky-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Owner support</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                A dedicated Vangow crew member will provide onboarding and ongoing support as your home’s owner representative and manager.
-              </p>
-            </div>
-
-            <div className="border-secondary border-[1px] md:block hidden">
-              <div style={{ backgroundImage: "url(/bgs/gray-bg.webp)" }} className="bg-cover h-[60px] relative" >
-                <span className="border-[1px] border-secondary bg-white -bottom-5 px-4 py-1 left-4  rounded-xl font-bold text-2xl absolute">Company guarantee</span>
-              </div>
-              <p className="mt-6 p-4 ">
-                Vangow guarantees the other owners in the company. If one owner defaults the monthly payments, Vangow steps in, the co-owners are protected.
-              </p>
-            </div>
+            <Box backgroundImage={"url(/bgs/gray-bg.webp)"} title={"Company guarantee"} className={"md:block hidden"}>
+              Vangow guarantees the other owners in the company. If one owner defaults the monthly payments, Vangow steps in, the co-owners are protected.
+            </Box>
 
           </div>
 

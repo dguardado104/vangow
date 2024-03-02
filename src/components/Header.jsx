@@ -28,8 +28,8 @@ export default function Header() {
     {
       key: 2,
       label: 'How it works',
-      url: '/how-it-works',
-      active: pathname != '/how-it-works' ? false : true
+      url: '/learns',
+      active: pathname != '/learns' ? false : true
     },
     {
       key: 3,
@@ -71,8 +71,8 @@ export default function Header() {
         {
           key: 2,
           label: 'How it works',
-          url: '/how-it-works',
-          active: pathname != '/how-it-works' ? false : true
+          url: '/learns',
+          active: pathname != '/learns' ? false : true
         },
         {
           key: 3,
@@ -239,18 +239,17 @@ export default function Header() {
             {
               itemsNav.length > 0 ?
                 itemsNav.map(item => (
-                  <>
+                  <div className="flex flex-col" key={item.key}>
                     <span className="font-semibold mt-5 mb-2">{item.label}</span>
                     {
                       item.links.map(link => (
                         <Link to={link.url} className="hover:text-lg transition-all mb-1" key={link.key}>{link.label}</Link>
                       ))
                     }
-                  </>
+                  </div>
                 ))
                 : ''
             }
-
           </nav>
         </div>
       </div>
