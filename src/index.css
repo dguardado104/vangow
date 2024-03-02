@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.custom-next-arrow, .custom-prev-arrow{
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid #001925;
+  border-radius: 10px;
+  transition: background-color .2s ease-in-out;
+}
+
+.custom-next-arrow {
+  top: -40px;
+  right: 0;
+}
+
+.custom-prev-arrow {
+  top: -40px;
+  right: 40px;
+}
+
+.custom-next-arrow:hover, .custom-prev-arrow:hover{
+  background-color: #87d2d8;
+}
+
 #header-nav {
   animation: color linear both;
   animation-timeline: scroll();

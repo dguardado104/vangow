@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom"
 import GetInTouch from "../components/GetInTouch"
 import Box from "../components/Box"
+import NewPlaces from "../components/NewPlaces"
 
 export default function Home() {
 
@@ -69,6 +70,9 @@ export default function Home() {
           </div>
           <div className="border-secondary border-b-[1px] w-full mt-14 hidden md:block"></div>
         </section>
+
+        <NewPlaces />
+
         <section className="">
           <div className="flex  flex-col justify-center items-center gap-4 text-center md:flex-row md:justify-between md:items-start md:text-start">
             <span className="text-3xl font-bold md:w-full xl:w-1/6">Vangow is not a timeshare</span>
