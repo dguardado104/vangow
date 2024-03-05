@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import PageNotFound from "./pages/PageNotFound"
 import Footer from "./components/Footer"
 import LoginBager from "./components/LoginBager"
+import Terms from "./pages/Terms"
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/learns" element={<Learns />} />
+          <Route path="/terms" element={<Terms />} />
           <Route
             path="*"
             element={<PageNotFound />}

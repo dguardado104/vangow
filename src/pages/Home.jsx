@@ -68,7 +68,7 @@ export default function Home() {
           <div className="my-14 ">
             <Link to="/learns" className="text-white bg-primary py-3 px-8 rounded-lg  transition-all hover:scale-105 hover:bg-secondary" >How it works</Link>
           </div>
-          <div className="border-secondary border-b-[1px] w-full mt-14 hidden md:block"></div>
+          
         </section>
 
         <NewPlaces />
@@ -132,7 +132,7 @@ export default function Home() {
             <p className="xl:w-1/3">For just $99 per share, Vangow Management Fee covers all your property management needs with premium services, including:</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
 
             <Box backgroundImage={"url(/bgs/gray-bg.webp)"} title={"Property oversight"}>
               Vangow oversees local vendor management, cleaning, security, home repairs, landscaping, interior design upgrades and more.
