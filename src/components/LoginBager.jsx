@@ -5,7 +5,7 @@ export default function LoginBager(){
   const [isOpen, setIsOpen] = useState(false)
 
   return(
-    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-20 bg-white max-w-[500px] w-full rounded-t-2xl">
+    <div className=" font-abc fixed bottom-0 left-1/2 -translate-x-1/2 z-20 bg-white max-w-[500px] w-full rounded-t-2xl">
      <button onClick={() => setIsOpen(!isOpen)} className="bg-primary text-white w-full rounded-t-2xl p-2 flex justify-center items-center gap-4">
       Join our mailing list
       <img src="/icons/angle-down.svg" width="15px" className={isOpen ? '' : 'rotate-180'} />

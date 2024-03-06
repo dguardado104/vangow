@@ -5,7 +5,7 @@ export default function Card({ item, className }) {
       <div style={{ backgroundImage: item.imageUrl ? `url(${item.imageUrl})` : 'url(/bgs/home-bg-2.webp)' }} className={`bg-cover bg-center h-80 rounded-lg relative ${className}`}>
         <div className="bg-secondary text-white absolute bottom-0 rounded-lg p-3 flex justify-between text-xs items-center w-full">
           <div className="flex flex-col gap-1 w-1/2">
-            <span className="font-bold text-2xl">Sandcastle</span>
+            <span className="font-bold text-2xl font-made-outer">Sandcastle</span>
             <span className="text-primary-strong">$275,000.00</span>
             <span>Isla Contadora, Panama</span>
           </div>

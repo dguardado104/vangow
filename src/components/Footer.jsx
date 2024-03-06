@@ -152,7 +152,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className=" bg-primary text-white">
+    <footer className=" bg-primary text-white font-abc">
       <div className="px-4 md:px-16 xl:px-32">
         <section className="flex flex-col md:flex-row gap-8 justify-between pt-8">
           <MultipleLinks items={items} />
@@ -196,7 +196,7 @@ function MultipleLinks(props) {
       {
         items.map(item => (
           <div key={item.key}>
-            <span className="uppercase font-medium">{item.title}</span>
+            <span className="font-bold">{item.title}</span>
             <nav className="flex flex-col gap-2 mt-4">
               {
                 item.links.map(link => (

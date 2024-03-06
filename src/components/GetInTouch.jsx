@@ -2,7 +2,7 @@ export default function GetInTouch() {
   return (
     <section className="bg-secondary text-white">
       <div className="py-36 flex flex-col items-center justify-center">
-        <span className="text-4xl md:text-7xl font-bold">GetInTouch</span>
+        <span className="text-4xl md:text-7xl font-bold font-made-outer">Get<span className="font-nautica font-normal">In</span>Touch</span>
         <p className="w-[300px] text-center py-16">If you have any special requests, please let us know. Tell us who you are and what you would like to know about Vangow.</p>
 
         <form action="#" className="flex flex-col gap-5">

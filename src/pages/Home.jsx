@@ -7,7 +7,7 @@ import NewPlaces from "../components/NewPlaces"
 export default function Home() {
 
   return (
-    <main className="text-secondary">
+    <main className="text-secondary font-abc">
       <section className="bg-[#222] h-screen w-full relative overflow-hidden">
         <video className="h-full w-full object-cover object-top animate-duration-[2s] animate-ease-in-out" src="/video-home.mp4" playsInline muted autoPlay loop></video>
         <div className="absolute top-1/2 -translate-y-1/2  left-1/2 z-10 -translate-x-1/2 text-center text-white">
@@ -16,8 +16,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <span className="text-xl ">EST.2024</span>
-            <span className="text-5xl">Luxury<span className="text-6xl">Second</span></span>
-            <span className="text-6xl"><span className="text-6xl">Home</span>Club</span>
+            <span className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-6xl font-made-outer">Second</span></span>
+            <span className="text-6xl font-nautica"><span className="text-6xl font-made-outer">Home</span>Club</span>
             <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
           </div>
 
@@ -31,7 +31,7 @@ export default function Home() {
       <article className="px-8">
         <section className="flex flex-col items-center my-16 justify-center ">
           <div className="flex flex-col text-center max-w-2xl mb-8">
-            <span className="text-3xl font-bold mb-4">Luxury Second Homes for ⅛ the cost</span>
+            <span className="text-3xl font-bold mb-4 font-made-outer">Luxury Second Homes for ⅛ the cost</span>
             <p>Vangow offers the opportunity to co-own a stunning home for quality family time, minus the challenges of owning an entire property. Select from ⅛ to ½ ownership options for a hassle-free experience.</p>
           </div>
 
@@ -39,28 +39,28 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/gem.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl">Luxury Homes</span>
+                <span className="font-bold text-2xl font-abc-bold">Luxury Homes</span>
               </div>
               <p>Our turnkey homes with exceptional design, prime locations, and a captivating &quot;wow&quot; factor.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/user-time.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl">Simple Buying</span>
+                <span className="font-bold text-2xl font-abc-bold">Simple Buying</span>
               </div>
               <p>Own a second home for 1/8 price and share the financial load.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/hand-holding-heart.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl">Full Management</span>
+                <span className="font-bold text-2xl font-abc-bold">Full Management</span>
               </div>
               <p>We take care of the most tiring part of managing a house with others.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/earnings.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl">Easy Selling</span>
+                <span className="font-bold text-2xl font-abc-bold">Easy Selling</span>
               </div>
               <p>Swap or sell on your own terms. The homes have an average resale gain of 10%, ensuring a lucrative investment.</p>
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
         <section className="">
           <div className="flex  flex-col justify-center items-center gap-4 text-center md:flex-row md:justify-between md:items-start md:text-start">
-            <span className="text-3xl font-bold md:w-full xl:w-1/6">Vangow is not a timeshare</span>
+            <span className="text-3xl font-bold md:w-full xl:w-1/6 font-made-outer">Vangow is not a timeshare</span>
             <p className="xl:w-1/3">Co-ownership of a vacation home provides you with a share of the property&apos;s title, whereas timeshare ownership only grants you the right to utilize the property during specific time intervals.</p>
           </div>
           <table className="table-auto w-full my-8">
@@ -128,7 +128,7 @@ export default function Home() {
         </section>
         <section className="py-16">
           <div className="flex  flex-col justify-center items-center gap-4 text-center md:flex-row md:justify-between md:items-start md:text-start">
-            <span className="text-3xl font-bold md:w-full xl:w-1/6">EffectivelyManaged co-ownership</span>
+            <span className="text-3xl font-bold md:w-full xl:w-1/5 leading-none font-made-outer"><span className="font-nautica font-normal text-5xl">Effectively</span>Managed co-ownership</span>
             <p className="xl:w-1/3">For just $99 per share, Vangow Management Fee covers all your property management needs with premium services, including:</p>
           </div>
 

@@ -216,7 +216,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header style={shadow} id="header-nav" className={` fixed w-full top-0 shadow-inner z-20 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-full after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
+    <header style={shadow} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-20 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
       <a href="/" className="block">
         <img src="/logo.svg" />
       </a>
@@ -248,7 +248,7 @@ export default function Header() {
                     <span className="font-semibold mt-5 mb-2">{item.label}</span>
                     {
                       item.links.map(link => (
-                        <Link to={link.url} onClick={closeMenuWithScrollTop} className="hover:text-lg transition-all mb-1" key={link.key}>{link.label}</Link>
+                        <Link to={link.url} onClick={closeMenuWithScrollTop} className=" block hover:text-lg transition-all mb-1" key={link.key}>{link.label}</Link>
                       ))
                     }
                   </div>

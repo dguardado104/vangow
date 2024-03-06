@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "ABC Monument Grotesk Bold";
+  src: url(assets/fonts/ABCMonumentGrotesk-Bold-Trial.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk Light";
+  src: url(assets/fonts/ABCMonumentGrotesk-Light-Trial.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ABC Monument Grotesk Regular";
+  src: url(assets/fonts/ABCMonumentGrotesk-Regular-Trial.otf);
+}
+
+@font-face {
+  font-family: "MADE Outer Sans Bold";
+  src: url(assets/fonts/MADEOuterSansBold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Nautica Regular";
+  src: url(assets/fonts/NauticaW00Regular.ttf);
+}
+
+.font-nautica{
+  font-family: "Nautica Regular";
+}
+
+.font-abc{
+  font-family: "ABC Monument Grotesk Light";
+}
+
+.font-abc-bold{
+  font-family: "ABC Monument Grotesk Bold";
+}
+
+.font-abc-regular{
+  font-family: "ABC Monument Grotesk Regular";
+}
+
+.font-made-outer{
+  font-family: "MADE Outer Sans Bold";
+}
