@@ -216,7 +216,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header style={shadow} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-20 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
+    <header style={shadow} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
       <a href="/" className="block">
         <img src="/logo.svg" />
       </a>
@@ -239,7 +239,7 @@ export default function Header() {
           <button className="self-end top-4 right-3 absolute hover:scale-105 transition-all" onClick={closeMenu}>
             <img src="/icons/close.svg" />
           </button>
-          <nav className="flex flex-col p-16 pt-16">
+          <nav className="flex flex-col p-16 overflow-y-auto">
             <span className="text-primary font-bold">SIGN UP / SIGN IN</span>
             {
               itemsNav.length > 0 ?

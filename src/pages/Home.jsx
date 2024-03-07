@@ -15,9 +15,9 @@ export default function Home() {
             <img src="/hero.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl ">EST.2024</span>
-            <span className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-6xl font-made-outer">Second</span></span>
-            <span className="text-6xl font-nautica"><span className="text-6xl font-made-outer">Home</span>Club</span>
+            <span className=" text-lg xl:text-xl ">EST.2024</span>
+            <span className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-4xl xl:text-6xl font-made-outer">Second</span></span>
+            <span className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</span>
             <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
           </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
       <section className="pt-16 md:pb-32 xl:pb-28 bg-[#000]/5 p-4">
 
         <div className="flex flex-col items-center justify-center">
-          <span className="text-3xl xl:text-7xl font-bold mb-6">Intellistay™</span>
+          <span className="text-3xl xl:text-7xl font-bold mb-6 font-made-outer">Intellistay™</span>
           <p className="max-w-[400px] text-center text-pretty">Dynamic Scheduling, you decide what dates are most important to you, and your usage may vary from year to year.</p>
         </div>
         <div className="md:hidden">

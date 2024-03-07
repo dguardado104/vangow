@@ -41,9 +41,9 @@ export default function NewPlaces() {
 
   return (
     <section className="border-y-[1px] my-16 py-16 border-secondary">
-      <div className="flex justify-center text-center flex-col font-bold text-6xl mb-12">
-        <span className="font-nautica font-normal">New<span className="font-made-outer">Places</span></span>
-        <span className="font-made-outer">Explore<span className="font-nautica font-normal">Yours</span></span>
+      <div className="flex justify-center text-center flex-col font-bold text-5xl xl:text-6xl mb-12">
+        <span className="font-nautica font-normal leading-[.025]">New<span className="font-made-outer text-4xl xl:text-5xl ">Places</span></span>
+        <span className="font-made-outer text-4xl xl:text-5xl">Explore<span className="font-nautica font-normal">Yours</span></span>
       </div>
 
       <Slider {...settings}>
