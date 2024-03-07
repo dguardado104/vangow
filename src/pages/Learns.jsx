@@ -1,3 +1,4 @@
+import BlogCarousel from "../components/BlogCarousel";
 import Box from "../components/Box";
 import GetInTouch from "../components/GetInTouch";
 
@@ -56,14 +57,14 @@ export default function Learns() {
         </section>
 
       </article>
-      <section className="bg-[#f2f2f2]">
+      <section className="bg-[#f2f2f2] md:hidden">
         <div className="flex justify-center flex-col text-center p-16">
           <span className="font-made-outer text-3xl mb-4">Easy simple scheduling</span>
           <p>Our <strong className="font-made-outer">Intellistay™</strong> scheduling system markes booking time in your home simple and fair</p>
           <p>Book stays from 2 days to 2 years in advance with the Vangow app and enjoy guaranteed access to your home during holidays and the summer season.</p>
           <img src="/calendar.webp" alt="" className="mt-8" />
         </div>
-        <div className="px-4">
+        <div className="px-4 pb-16">
           <ItemContent title={"Flexible"}>
             <p>Book open dates in real-time, from 2 days to 2 years ahead. Easily adjust confirmed stays as needed.</p>
           </ItemContent>
@@ -74,11 +75,59 @@ export default function Learns() {
             <p>Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season.</p>
           </ItemContent>
         </div>
+      </section>
+      <section className="hidden md:block bg-[#f2f2f2] px-4 py-16">
+        <div className="flex justify-between max-w-7xl mx-auto">
+          <div>
+            <span className="font-made-outer text-3xl mb-4">Easy simple <br /> scheduling</span>
+          </div>
+          <div className="flex gap-4 w-1/2">
+            <p>Our <strong className="font-made-outer">Intellistay™</strong> scheduling system markes booking time in your home simple and fair</p>
+            <p>Book stays from 2 days to 2 years in advance with the Vangow app and enjoy guaranteed access to your home during holidays and the summer season.</p>
+          </div>
+        </div>
+        <div className="flex gap-16 max-w-7xl mx-auto mt-16">
+          <div className="w-1/3 flex flex-col gap-8">
+            <ItemContent title={"Flexible"}>
+              <p>Book open dates in real-time, from 2 days to 2 years ahead. Easily adjust confirmed stays as needed.</p>
+            </ItemContent>
+            <ItemContent title={"Smart"}>
+              <p>Our Intellistay™ system adapts to seasonal changes, local events, and evolving owner preferences over time.</p>
+            </ItemContent>
+            <ItemContent title={"Fair"}>
+              <p>Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season.</p>
+            </ItemContent>
+          </div>
+          <div className="grid grid-cols-3 gap-4">
+            <img src="/mobile-home.webp" loading="lazy" />
+            <img src="/mobile-calendar.webp" loading="lazy" />
+            <img src="/mobile-stays.webp" loading="lazy" />
+          </div>
+        </div>
+
 
       </section>
+      <section className="py-16">
+        <div className="flex justify-center flex-col text-center">
+          <span>How co-ownership works</span>
+          <span className="font-bold text-2xl font-made-outer">Learn more about co-ownership</span>
 
-      <section className="bg-[#f2f2f2]">
-
+        </div>
+        <div className="max-w-7xl mx-auto pt-16">
+          <BlogCarousel />
+        </div>
+      </section>
+      <section className="bg-[#f2f2f2] py-16">
+        <div className="flex flex-col md:flex-row p-4 items-center gap-16 max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4 md:w-1/3">
+            <span >How co-ownership works</span>
+            <span className="font-bold text-2xl font-made-outer">Learn more about co-ownership</span>
+            <p>Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season.</p>
+          </div>
+          <div>
+            <img src="/image-video.webp" loading="lazy" className="rounded-xl" />
+          </div>
+        </div>
       </section>
       <GetInTouch />
     </main>

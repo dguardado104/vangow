@@ -111,42 +111,42 @@ export default function Footer() {
   const socialLinks = [
     {
       key: 1,
-      label: (<img src="/icons/facebook.svg" />),
+      label: (<img src="/icons/facebook.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 2,
-      label: (<img src="/icons/twitter-x.svg" />),
+      label: (<img src="/icons/twitter-x.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 3,
-      label: (<img src="/icons/instagram.svg" />),
+      label: (<img src="/icons/instagram.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 4,
-      label: (<img src="/icons/linkedin.svg" />),
+      label: (<img src="/icons/linkedin.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 5,
-      label: (<img src="/icons/youtube.svg" />),
+      label: (<img src="/icons/youtube.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 6,
-      label: (<img src="/icons/pinterest.svg" />),
+      label: (<img src="/icons/pinterest.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 7,
-      label: (<img src="/icons/threads.svg" />),
+      label: (<img src="/icons/threads.svg" loading="lazy" />),
       url: '#'
     },
     {
       key: 8,
-      label: (<img src="/icons/whatsapp.svg" />),
+      label: (<img src="/icons/whatsapp.svg" loading="lazy" />),
       url: '#'
     }
   ]
@@ -159,15 +159,15 @@ export default function Footer() {
           <div className="w-full border-[1px] md:hidden"></div>
           <section>
             <div className="flex gap-4 items-center">
-              <img src="/key.webp" />
+              <img src="/key.webp" loading="lazy" />
               <span className="text-3xl">Connect with <br /> Vangow</span>
             </div>
             <div className="flex gap-4 my-4">
               <a href="#">
-                <img src="/icons/ios.svg" alt="" width="140px" className="hover:scale-105 transition-all" />
+                <img src="/icons/ios.svg" alt="" width="140px" className="hover:scale-105 transition-all" loading="lazy" />
               </a>
               <a href="#">
-                <img src="/icons/play.svg" alt="" width="160px" className="hover:scale-105 transition-all" />
+                <img src="/icons/play.svg" alt="" width="160px" className="hover:scale-105 transition-all" loading="lazy" />
               </a>
             </div>
             <nav className="flex gap-4 py-8">

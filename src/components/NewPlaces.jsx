@@ -80,10 +80,10 @@ const CustomNextArrow = ({ onClick }) => (
   <div onClick={onClick} className={"custom-next-arrow"}>
     <img src="/icons/left-arrow.svg" className="" />
   </div>
-);
+)
 
 const CustomPrevArrow = ({onClick}) => (
   <div onClick={onClick} className="custom-prev-arrow">
     <img src="/icons/right-arrow.svg" className="" />
   </div>
-);
+)
