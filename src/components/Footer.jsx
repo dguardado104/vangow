@@ -30,8 +30,8 @@ export default function Footer() {
       links: [
         {
           key: 1,
-          label: 'Learn',
-          url: '/learn'
+          label: 'Learns',
+          url: '/learns'
         },
         {
           key: 2,
@@ -191,6 +191,10 @@ export default function Footer() {
 function MultipleLinks(props) {
   const { items } = props
 
+  const scrollTop = () => {
+    window.scrollTo(0, 0)
+  } 
+
   return (
     <div className="flex flex-wrap gap-24">
       {
@@ -200,7 +204,7 @@ function MultipleLinks(props) {
             <nav className="flex flex-col gap-2 mt-4">
               {
                 item.links.map(link => (
-                  <Link to={link.url} key={link.key} className="hover:scale-105 transition-all">{link.label}</Link>
+                  <Link to={link.url} key={link.key} onClick={scrollTop} className="hover:scale-105 transition-all">{link.label}</Link>
                 ))
               }
             </nav>
