@@ -35,30 +35,35 @@ export default function BlogCarousel() {
   }
 
   return (
-    <>
-      <Slider {...settings}>
-        <div>
-          <BlogCard />
-        </div>
-        <div>
-          <BlogCard />
-        </div>
-        <div>
-          <BlogCard />
-        </div>
-      </Slider>
-
-    </>
+    <section className="py-32">
+      <div className="flex justify-center flex-col text-center">
+        <strong>How co-ownership works</strong>
+        <span className="font-bold text-2xl md:text-4xl font-made-outer">Learn more about <br /> co-ownership</span>
+      </div>
+      <div className="max-w-7xl mx-auto pt-16">
+        <Slider {...settings}>
+          <div>
+            <BlogCard />
+          </div>
+          <div>
+            <BlogCard />
+          </div>
+          <div>
+            <BlogCard />
+          </div>
+        </Slider>
+      </div>
+    </section>
   )
 }
 
 const CustomNextArrow = ({ onClick }) => (
   <div onClick={onClick} className="bg-[#f2f2f2] py-3 hover:bg-primary rounded cursor-pointer absolute right-1 top-1/2 -translate-y-1/2">
-    <img src="/icons/left-arrow.svg"  />
+    <img src="/icons/left-arrow.svg" />
   </div>
 )
 
-const CustomPrevArrow = ({onClick}) => (
+const CustomPrevArrow = ({ onClick }) => (
   <div onClick={onClick} className="bg-[#f2f2f2] py-3 hover:bg-primary rounded absolute z-10 cursor-pointer left-0 top-1/2 -translate-y-1/2">
     <img src="/icons/right-arrow.svg" className="" />
   </div>

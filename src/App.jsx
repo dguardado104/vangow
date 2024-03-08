@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import LoginBager from "./components/LoginBager"
 import Terms from "./pages/Terms"
 import Listings from "./pages/Listings"
+import Collections from "./pages/Collections"
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/learns" element={<Learns />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/listings" element={<Listings />} />
+          <Route path="/collections" element={<Collections />} />
           <Route
             path="*"
             element={<PageNotFound />}

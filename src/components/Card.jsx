@@ -23,12 +23,11 @@ export default function Card({ item, className }) {
       :
       <div className={` bg-slate-300 h-80 relative rounded-xl ${className}`}>
         <div className="animate-pulse ">
-
           <div className="absolute bottom-0 w-full flex justify-between p-4 bg-slate-200 rounded-xl">
-            <div className="flex flex-col gap-2">
-              <div className="bg-slate-400 rounded h-4 w-40 md:w-60"></div>
-              <div className="bg-slate-400 rounded h-4 w-40 md:w-64"></div>
-              <div className="bg-slate-400 rounded h-4 w-48 md:w-72"></div>
+            <div className="flex flex-col gap-2 w-full">
+              <div className="bg-slate-400 rounded h-4 w-1/2"></div>
+              <div className="bg-slate-400 rounded h-4 w-full"></div>
+              <div className="bg-slate-400 rounded h-4 w-full"></div>
             </div>
 
           </div>

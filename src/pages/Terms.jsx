@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <main className="text-secondary">
 
-      <header style={{ backgroundImage: 'url(/bgs/gray-bg.webp)' }} className="py-16 bg-cover bg-center flex justify-center">
+      <header style={{ backgroundImage: 'url(/bgs/gray-bg.webp)' }} className=" h-80 bg-cover bg-center flex items-center justify-center">
         <span className="font-bold text-3xl">Terms & conditions</span>
       </header>
       <article className="max-w-7xl mx-auto py-16 px-4">

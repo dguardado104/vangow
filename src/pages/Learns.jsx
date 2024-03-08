@@ -5,7 +5,7 @@ import GetInTouch from "../components/GetInTouch";
 export default function Learns() {
   return (
     <main className="text-secondary font-abc">
-      <section style={{ backgroundImage: 'url(/bgs/home-bg-1.webp)' }} className="h-[400px] bg-black bg-cover bg-center relative">
+      <section style={{ backgroundImage: 'url(/bgs/home-bg-1.webp)' }} className="h-[30rem]  bg-black bg-cover bg-center relative">
         <div className="text-white left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute flex flex-col text-center ">
           <span>How Vangow works</span>
           <span className="my-4 font-bold text-4xl font-made-outer">Co-Ownership, simplified</span>
@@ -107,16 +107,7 @@ export default function Learns() {
 
 
       </section>
-      <section className="py-16">
-        <div className="flex justify-center flex-col text-center">
-          <span>How co-ownership works</span>
-          <span className="font-bold text-2xl font-made-outer">Learn more about co-ownership</span>
-
-        </div>
-        <div className="max-w-7xl mx-auto pt-16">
-          <BlogCarousel />
-        </div>
-      </section>
+      <BlogCarousel />
       <section className="bg-[#f2f2f2] py-16">
         <div className="flex flex-col md:flex-row p-4 items-center gap-16 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4 md:w-1/3">
