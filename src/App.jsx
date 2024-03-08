@@ -8,6 +8,7 @@ import LoginBager from "./components/LoginBager"
 import Terms from "./pages/Terms"
 import Listings from "./pages/Listings"
 import Collections from "./pages/Collections"
+import Destinations from "./pages/Destinatations"
 
 
 export default function App() {
@@ -22,10 +23,8 @@ export default function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/collections" element={<Collections />} />
-          <Route
-            path="*"
-            element={<PageNotFound />}
-          />
+          <Route path="/destinations" element={<Destinations />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
