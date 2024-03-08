@@ -17,7 +17,7 @@ export default function Home() {
           <div className="flex flex-col">
             <h2 className=" text-lg xl:text-xl ">EST.2024</h2>
             <h1 className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-4xl xl:text-6xl font-made-outer">Second</span></h1>
-            <h1 className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</h1>
+            <h2 className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</h2>
             <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
           </div>
 
