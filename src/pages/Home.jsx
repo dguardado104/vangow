@@ -15,9 +15,9 @@ export default function Home() {
             <img src="/hero.svg" />
           </div>
           <div className="flex flex-col">
-            <span className=" text-lg xl:text-xl ">EST.2024</span>
-            <span className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-4xl xl:text-6xl font-made-outer">Second</span></span>
-            <span className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</span>
+            <h2 className=" text-lg xl:text-xl ">EST.2024</h2>
+            <h1 className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-4xl xl:text-6xl font-made-outer">Second</span></h1>
+            <h1 className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</h1>
             <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
           </div>
 
@@ -39,14 +39,14 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/gem.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl font-abc-bold">Luxury Homes</span>
+                <h2 className="font-bold text-2xl font-abc-bold">Luxury Homes</h2>
               </div>
               <p>Our turnkey homes with exceptional design, prime locations, and a captivating &quot;wow&quot; factor.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
                 <img src="/icons/user-time.svg" className="hidden md:block" />
-                <span className="font-bold text-2xl font-abc-bold">Simple Buying</span>
+                <h2 className="font-bold text-2xl font-abc-bold">Simple Buying</h2>
               </div>
               <p>Own a second home for 1/8 price and share the financial load.</p>
             </div>

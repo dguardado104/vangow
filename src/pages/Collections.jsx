@@ -6,7 +6,7 @@ export default function Collection(){
   return(
     <main className="font-abc">
       <header style={{ backgroundImage: 'url(/bgs/sky-transparent.webp)' }} className=" h-80 bg-primary bg-cover bg-center flex flex-col items-center justify-center">
-        <span className="font-bold text-3xl"><span className="font-nautica">Explore</span>Home</span>
+        <h1 className="font-bold text-3xl"><span className="font-nautica">Explore</span>Home</h1>
         <p className="max-w-[400px] text-center">Explore homes featuring exceptional amenities in prime destinations to begin your journey.</p>
       </header>
       <article className="py-16">

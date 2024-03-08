@@ -8,7 +8,7 @@ export default function Listings() {
     <main className="text-secondary font-abc">
       <header style={{ backgroundImage: 'url(/bgs/room.webp)' }} className="bg-cover bg-center  h-[30rem] flex justify-center items-center">
         <div className="flex flex-col">
-          <span className="font-made-outer text-white text-5xl leading-[.5] text-center mb-6">Find<span className="font-nautica">Your</span><br className="md:hidden" />Place</span>
+          <h1 className="font-made-outer text-white text-5xl leading-[.5] text-center mb-6">Find<span className="font-nautica">Your</span><br className="md:hidden" />Place</h1>
           <div className="flex bg-white justify-between items-center p-2 rounded-lg border-[1px] border-secondary">
             <input type="text" className="w-full outline-0" placeholder="Where would you like to live?" />
             <img src="/icons/search.svg" alt="" />

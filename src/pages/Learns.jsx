@@ -7,7 +7,7 @@ export default function Learns() {
     <main className="text-secondary font-abc">
       <section style={{ backgroundImage: 'url(/bgs/home-bg-1.webp)' }} className="h-[30rem]  bg-black bg-cover bg-center relative">
         <div className="text-white left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute flex flex-col text-center ">
-          <span>How Vangow works</span>
+          <h1>How Vangow works</h1>
           <span className="my-4 font-bold text-4xl font-made-outer">Co-Ownership, simplified</span>
           <p>You own the home, and we manage it. It’s the best and modern way to buy and own a luxury second home.</p>
         </div>
