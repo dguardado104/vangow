@@ -78,12 +78,12 @@ export default function NewPlaces() {
 
 const CustomNextArrow = ({ onClick }) => (
   <div onClick={onClick} className={"custom-next-arrow"}>
-    <img src="/icons/left-arrow.svg" className="" />
+    <img src="/icons/left-arrow.svg" alt="icon" />
   </div>
 )
 
 const CustomPrevArrow = ({onClick}) => (
   <div onClick={onClick} className="custom-prev-arrow">
-    <img src="/icons/right-arrow.svg" className="" />
+    <img src="/icons/right-arrow.svg" alt="icon" />
   </div>
 )

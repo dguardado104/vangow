@@ -12,7 +12,7 @@ export default function Home() {
         <video className="h-full w-full object-cover object-top animate-duration-[2s] animate-ease-in-out" src="/video-home.mp4" playsInline muted autoPlay loop></video>
         <div className="absolute top-1/2 -translate-y-1/2  left-1/2 z-10 -translate-x-1/2 text-center text-white">
           <div className="flex justify-center">
-            <img src="/hero.svg" />
+            <img src="/hero.svg" alt="image" />
           </div>
           <div className="flex flex-col">
             <h2 className=" text-lg xl:text-xl ">EST.2024</h2>

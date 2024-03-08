@@ -59,12 +59,12 @@ export default function BlogCarousel() {
 
 const CustomNextArrow = ({ onClick }) => (
   <div onClick={onClick} className="bg-[#f2f2f2] py-3 hover:bg-primary rounded cursor-pointer absolute right-1 top-1/2 -translate-y-1/2">
-    <img src="/icons/left-arrow.svg" />
+    <img src="/icons/left-arrow.svg" alt="icon" />
   </div>
 )
 
 const CustomPrevArrow = ({ onClick }) => (
   <div onClick={onClick} className="bg-[#f2f2f2] py-3 hover:bg-primary rounded absolute z-10 cursor-pointer left-0 top-1/2 -translate-y-1/2">
-    <img src="/icons/right-arrow.svg" className="" />
+    <img src="/icons/right-arrow.svg" alt="icon" />
   </div>
 )

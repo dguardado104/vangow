@@ -62,7 +62,7 @@ export default function Learns() {
           <span className="font-made-outer text-3xl mb-4">Easy simple scheduling</span>
           <p>Our <strong className="font-made-outer">Intellistay™</strong> scheduling system markes booking time in your home simple and fair</p>
           <p>Book stays from 2 days to 2 years in advance with the Vangow app and enjoy guaranteed access to your home during holidays and the summer season.</p>
-          <img src="/calendar.webp" alt="" className="mt-8" />
+          <img src="/calendar.webp" alt="icon" className="mt-8" />
         </div>
         <div className="px-4 pb-16">
           <ItemContent title={"Flexible"}>
@@ -99,9 +99,9 @@ export default function Learns() {
             </ItemContent>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            <img src="/mobile-home.webp" loading="lazy" />
-            <img src="/mobile-calendar.webp" loading="lazy" />
-            <img src="/mobile-stays.webp" loading="lazy" />
+            <img src="/mobile-home.webp" alt="image" loading="lazy" />
+            <img src="/mobile-calendar.webp" alt="image" loading="lazy" />
+            <img src="/mobile-stays.webp" alt="image" loading="lazy" />
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export default function Learns() {
             <p>Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season.</p>
           </div>
           <div>
-            <img src="/image-video.webp" loading="lazy" className="rounded-xl" />
+            <img src="/image-video.webp" alt="image" loading="lazy" className="rounded-xl" />
           </div>
         </div>
       </section>

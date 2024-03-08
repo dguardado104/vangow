@@ -11,7 +11,7 @@ export default function Listings() {
           <h1 className="font-made-outer text-white text-5xl leading-[.5] text-center mb-6">Find<span className="font-nautica">Your</span><br className="md:hidden" />Place</h1>
           <div className="flex bg-white justify-between items-center p-2 rounded-lg border-[1px] border-secondary">
             <input type="text" className="w-full outline-0" placeholder="Where would you like to live?" />
-            <img src="/icons/search.svg" alt="" />
+            <img src="/icons/search.svg" alt="icon" />
           </div>
         </div>
       </header>
@@ -61,27 +61,27 @@ function Categories() {
     {
       key: 1,
       label: 'Beach',
-      icon: (<img src="/icons/beach.svg" />)
+      icon: (<img src="/icons/beach.svg" alt="icon" />)
     },
     {
       key: 2,
       label: 'Beach',
-      icon: (<img src="/icons/beach.svg" />)
+      icon: (<img src="/icons/beach.svg" alt="icon" />)
     },
     {
       key: 3,
       label: 'Beach',
-      icon: (<img src="/icons/beach.svg" />)
+      icon: (<img src="/icons/beach.svg" alt="icon" />)
     },
     {
       key: 4,
       label: 'Beach',
-      icon: (<img src="/icons/beach.svg" />)
+      icon: (<img src="/icons/beach.svg" alt="icon" />)
     },
     {
       key: 5,
       label: 'Beach',
-      icon: (<img src="/icons/beach.svg" />)
+      icon: (<img src="/icons/beach.svg" alt="icon" />)
     }
   ]
 

@@ -64,7 +64,7 @@ export default function LoginBager() {
     <div className=" font-abc fixed bottom-0 left-1/2 -translate-x-1/2 z-50 bg-white max-w-[500px] w-full rounded-t-2xl">
       <button onClick={() => setIsOpen(!isOpen)} className="bg-primary text-white w-full rounded-t-2xl py-4 flex justify-center items-center gap-4 font-bold text-xl">
         Join our mailing list
-        <img src="/icons/angle-down.svg" width="15px" className={isOpen ? '' : 'rotate-180'} />
+        <img src="/icons/angle-down.svg" width="15px" alt="icon" className={isOpen ? '' : 'rotate-180'} />
       </button>
       <div className={` overflow-hidden transition-all duration-300 ${isOpen ? 'h-auto' : 'h-[0]'}`}>
         <form onSubmit={submit} className="p-5 pb-32">

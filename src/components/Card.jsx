@@ -11,7 +11,7 @@ export default function Card({ item, className }) {
           </div>
           <div className="flex flex-col gap-1 items-end">
             <button className="hover:scale-105 border-[1px] border-white rounded-lg p-1 self-end">
-              <img src="/icons/heart.svg" alt="" className="w-[16px]" />
+              <img src="/icons/heart.svg" alt="icon" className="w-[16px]" />
             </button>
             <span className="text-primary-strong flex items-center gap-1">
               <span className="block w-2 h-2 rounded-full bg-primary-strong"></span> 1/8 Ownership</span>
