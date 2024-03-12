@@ -1,6 +1,7 @@
 import BlogCarousel from "../components/BlogCarousel";
 import Box from "../components/Box";
 import GetInTouch from "../components/GetInTouch";
+import SectionPicture from "../components/SectionPicture";
 
 export default function Learns() {
   return (
@@ -108,18 +109,9 @@ export default function Learns() {
 
       </section>
       <BlogCarousel />
-      <section className="bg-[#f2f2f2] py-16">
-        <div className="flex flex-col md:flex-row p-4 items-center gap-16 max-w-7xl mx-auto">
-          <div className="flex flex-col gap-4 md:w-1/3">
-            <span >How co-ownership works</span>
-            <span className="font-bold text-2xl font-made-outer">Learn more about co-ownership</span>
-            <p>Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season.</p>
-          </div>
-          <div>
-            <img src="/image-video.webp" alt="image" loading="lazy" className="rounded-xl" />
-          </div>
-        </div>
-      </section>
+      <SectionPicture title="Learn more about co-ownership" subtitle="How co-ownership works" description="Each owner enjoys fair access to their residence throughout the year, with numerous chances to reserve stays during holiday periods and the summer season." >
+        <img src="/image-video.webp" alt="image" loading="lazy" className="rounded-xl" />
+      </SectionPicture>
       <GetInTouch />
     </main>
   )

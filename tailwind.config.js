@@ -9,7 +9,9 @@ export default {
       colors: {
         'primary': "#3db2bb",
         'secondary': "#001925",
-        'primary-strong': "#87d2d8"
+        'primary-strong': "#87d2d8",
+        'vpurple': "#9545ac",
+        'vorange': "#ff8c38"
       }
     },
   },

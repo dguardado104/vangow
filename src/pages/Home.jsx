@@ -38,28 +38,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-7xl mt-8">
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
-                <img src="/icons/gem.svg" className="hidden md:block" />
+                <img src="/icons/gem.svg" alt="icon" className="hidden md:block" />
                 <h2 className="font-bold text-2xl font-abc-bold">Luxury Homes</h2>
               </div>
               <p>Our turnkey homes with exceptional design, prime locations, and a captivating &quot;wow&quot; factor.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
-                <img src="/icons/user-time.svg" className="hidden md:block" />
+                <img src="/icons/user-time.svg" alt="icon" className="hidden md:block" />
                 <h2 className="font-bold text-2xl font-abc-bold">Simple Buying</h2>
               </div>
               <p>Own a second home for 1/8 price and share the financial load.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
-                <img src="/icons/hand-holding-heart.svg" className="hidden md:block" />
+                <img src="/icons/hand-holding-heart.svg" alt="icon" className="hidden md:block" />
                 <span className="font-bold text-2xl font-abc-bold">Full Management</span>
               </div>
               <p>We take care of the most tiring part of managing a house with others.</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-4">
-                <img src="/icons/earnings.svg" className="hidden md:block" />
+                <img src="/icons/earnings.svg" alt="icon" className="hidden md:block" />
                 <span className="font-bold text-2xl font-abc-bold">Easy Selling</span>
               </div>
               <p>Swap or sell on your own terms. The homes have an average resale gain of 10%, ensuring a lucrative investment.</p>
@@ -166,7 +166,7 @@ export default function Home() {
       <section className="pt-16 md:pb-32 xl:pb-28 bg-[#000]/5 p-4">
 
         <div className="flex flex-col items-center justify-center">
-          <span className="text-3xl xl:text-7xl font-bold mb-6 font-made-outer">Intellistay™</span>
+          <span className="text-3xl xl:text-7xl font-bold mb-6 font-made-outer">Intellistay<span className="font-sans">™</span></span>
           <p className="max-w-[400px] text-center text-pretty">Dynamic Scheduling, you decide what dates are most important to you, and your usage may vary from year to year.</p>
         </div>
         <div className="md:hidden">

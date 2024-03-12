@@ -109,6 +109,12 @@ export default function Header() {
           url: '/scheduling',
           active: pathname != '/destinations' ? false : true
         },
+        {
+          key: 8,
+          label: 'Closing',
+          url: '/closing',
+          active: pathname != '/closing' ? false : true
+        },
       ],
     },
     {

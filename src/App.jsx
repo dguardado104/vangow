@@ -9,6 +9,8 @@ import Terms from "./pages/Terms"
 import Listings from "./pages/Listings"
 import Collections from "./pages/Collections"
 import Destinations from "./pages/Destinatations"
+import Scheduling from "./pages/Scheduling"
+import Closing from "./pages/Closing"
 
 
 export default function App() {
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/listings" element={<Listings />} />
           <Route path="/collections" element={<Collections />} />
           <Route path="/destinations" element={<Destinations />} />
+          <Route path="/scheduling" element={<Scheduling />} />
+          <Route path="/closing" element={<Closing />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
