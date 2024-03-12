@@ -11,6 +11,7 @@ import Collections from "./pages/Collections"
 import Destinations from "./pages/Destinatations"
 import Scheduling from "./pages/Scheduling"
 import Closing from "./pages/Closing"
+import Selling from "./pages/Selling"
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/scheduling" element={<Scheduling />} />
           <Route path="/closing" element={<Closing />} />
+          <Route path="/selling" element={<Selling />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

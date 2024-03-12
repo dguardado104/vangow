@@ -34,11 +34,10 @@ export default function Closing() {
       <SectionPicture title="Our support doesn't end at closing" subtitle="What to expect as an owner" description="Vangow takes care of your home, so you can just show up and relax. Our ongoing services include property management, bill payment, maintenance and more. Owners are responsible for the home's monthly operating expenses, such as utilities and turnover services. Vangow passes these costs through to owners based on the number of shares owned." >
         <img src="/image-video.webp" alt="image" loading="lazy" className="rounded-xl" />
       </SectionPicture>
-      <article className="px-4">
+      <article className="px-4 pt-16">
         <section>
           <div className="flex flex-col items-center justify-center">
-            <span className="text-3xl xl:text-7xl font-bold mb-6 font-made-outer">Intellistay<span className="font-sans">™</span></span>
-            <p className="max-w-[400px] text-center text-pretty">Dynamic Scheduling, you decide what dates are most important to you, and your usage may vary from year to year.</p>
+            <span className="text-4xl font-bold mb-6 font-made-outer">Closing FAQs</span>
           </div>
         </section>
         <section className="max-w-7xl mx-auto py-16">
