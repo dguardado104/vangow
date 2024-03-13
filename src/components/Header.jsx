@@ -6,6 +6,10 @@ export default function Header() {
   const { pathname } = location
   const [open, setOpen] = useState(false)
   const menuRef = useRef(null)
+  const [scrollBar, setScrollBar] = useState({
+    WebkitBoxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)",
+    boxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)"
+  })
 
   const openMenu = e => {
     e.stopPropagation()
@@ -19,7 +23,7 @@ export default function Header() {
   const closeMenuWithScrollTop = () => {
     setOpen(false)
     window.scrollTo(0, 0)
-  } 
+  }
 
   /* Links URL */
 
@@ -213,13 +217,29 @@ export default function Header() {
     }
   }, [open])
 
-  const shadow = {
-    WebkitBoxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)",
-    boxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)"
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setScrollBar({
+          backgroundColor: '#3DB2BB'
+        })
+      } else {
+        setScrollBar({
+          WebkitBoxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)",
+          boxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)"
+        })
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  })
 
   return (
-    <header style={shadow} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
+    <header style={scrollBar} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-8 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
       <a href="/" className="block">
         <img src="/logo.svg" alt="image" />
       </a>
@@ -229,7 +249,7 @@ export default function Header() {
             items.length > 0 ?
               items.slice(0, 6).map(item => {
                 if (item.url != '/') {
-                  return <Link to={item.url} className={` text-white  ${item.active ? '' : ''}`} key={item.key}>{item.label}</Link>
+                  return <Link to={item.url} className={` text-white font-abc-bold ${item.active ? '' : ''}`} key={item.key}>{item.label}</Link>
                 }
               })
               : ''

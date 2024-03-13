@@ -159,7 +159,7 @@ export default function Footer() {
           <div className="w-full border-[1px] md:hidden"></div>
           <section>
             <div className="flex gap-4 items-center">
-              <img src="/key.webp" loading="lazy" alt="icon" />
+              <img src="/key.svg" loading="lazy" alt="icon" />
               <span className="text-3xl">Connect with <br /> Vangow</span>
             </div>
             <div className="flex gap-4 my-4">

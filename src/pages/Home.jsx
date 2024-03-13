@@ -9,23 +9,27 @@ export default function Home() {
   return (
     <main className="text-secondary font-abc">
       <section className="bg-[#222] h-screen w-full relative overflow-hidden">
-        <video className="h-full w-full object-cover object-top animate-duration-[2s] animate-ease-in-out" src="/video-home.mp4" playsInline muted autoPlay loop></video>
+        {/*<video className="h-full w-full object-cover object-top animate-duration-[2s] animate-ease-in-out" src="/video-home.mp4" playsInline muted autoPlay loop></video>*/}
+        <img src="/bgs/home-front-1.webp" alt="image" className="w-screen h-screen min-h-full" />
         <div className="absolute top-1/2 -translate-y-1/2  left-1/2 z-10 -translate-x-1/2 text-center text-white">
           <div className="flex justify-center">
             <img src="/hero.svg" alt="image" />
           </div>
           <div className="flex flex-col">
             <h2 className=" text-lg xl:text-xl ">EST.2024</h2>
-            <h1 className="text-5xl font-nautica leading-[2px]">Luxury<span className="text-4xl xl:text-6xl font-made-outer">Second</span></h1>
-            <h2 className="text-5xl font-nautica"><span className="text-4xl xl:text-6xl font-made-outer">Home</span>Club</h2>
-            <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary" >View Listing</Link>
+            <h1 className="text-5xl md:text-7xl font-nautica !leading-[0]">Luxury<span className="text-4xl md:text-7xl font-made-outer">Second</span></h1>
+            <h2 className="text-5xl md:text-7xl font-nautica"><span className="text-4xl md:text-7xl font-made-outer">Home</span>Club</h2>
+            <Link to="/listings" className="self-center text-white bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-secondary font-abc-bold" >View Listing</Link>
           </div>
 
         </div>
-        <div className="absolute bottom-4 left-4 w-96 text-white text-justify hidden md:block">
-          <p>
-            Vangow is a new way to buy real estate assets. We help you to find your dreamed vacation home and easily co-own a part of it.
+        <div className="absolute bottom-4 px-4 w-full text-white text-justify hidden md:inline-flex items-center justify-between">
+          <p className="w-96">
+            Vangow is a new way to buy real estate assets. We help you to find your dreamed vacation home and easily co-own a part of it. <Link className="text-[#ABF3FB] font-abc-bold">Read more +</Link>
           </p>
+          <div>
+          <Link className="p-3 border-[1px] rounded-xl border-primary inline-flex "><img src="/icons/message-circle.svg" alt="icon" /></Link>
+          </div>
         </div>
       </section>
       <article className="px-8">
@@ -166,7 +170,7 @@ export default function Home() {
       <section className="pt-16 md:pb-32 xl:pb-28 bg-[#000]/5 p-4">
 
         <div className="flex flex-col items-center justify-center">
-          <span className="text-3xl xl:text-7xl font-bold mb-6 font-made-outer">Intellistay<span className="font-sans">™</span></span>
+          <span className="text-3xl md:text-7xl font-bold mb-6 font-made-outer">Intellistay<span className="font-sans">™</span></span>
           <p className="max-w-[400px] text-center text-pretty">Dynamic Scheduling, you decide what dates are most important to you, and your usage may vary from year to year.</p>
         </div>
         <div className="md:hidden">

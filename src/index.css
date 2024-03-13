@@ -28,22 +28,6 @@
   background-color: #87d2d8;
 }
 
-#header-nav {
-  animation: color linear both;
-  animation-timeline: scroll();
-  animation-range: 0 500px;
-}
-
-@keyframes color {
-  100% {
-    box-shadow: none;
-    background: #3db2bb;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-}
-
-
 /* scroll */
 
 .categories_scroll::-webkit-scrollbar {

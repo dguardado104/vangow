@@ -99,7 +99,7 @@ export default function GetInTouch() {
               </div>
             </div>
           </div>
-          <button type="submit" className="text-white font-medium bg-primary-strong py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-primary-strong">Join</button>
+          <button type="submit" className="text-white font-medium bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-primary-strong">Join</button>
         </form>
       </div>
     </section>
