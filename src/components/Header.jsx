@@ -22,7 +22,9 @@ export default function Header() {
 
   const closeMenuWithScrollTop = () => {
     setOpen(false)
-    window.scrollTo(0, 0)
+    window.scrollTo({
+      top: 0
+    })
   }
 
   /* Links URL */
@@ -271,7 +273,7 @@ export default function Header() {
                     <span className="font-semibold mt-5 mb-2">{item.label}</span>
                     {
                       item.links.map(link => (
-                        <Link to={link.url} onClick={closeMenuWithScrollTop} className=" block hover:text-lg transition-all mb-1" key={link.key}>{link.label}</Link>
+                        <Link to={link.url} onClick={closeMenuWithScrollTop} className=" hover:scale-105 transition-all mb-1" key={link.key}>{link.label}</Link>
                       ))
                     }
                   </div>

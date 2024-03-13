@@ -14,6 +14,7 @@ import Closing from "./pages/Closing"
 import Selling from "./pages/Selling"
 import Agents from "./pages/Agents"
 import About from "./pages/About"
+import FAQs from "./pages/FAQs"
 
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/selling" element={<Selling />} />
           <Route path="/agents" element={<Agents />} />
           <Route path="/about" element={<About />} />
+          <Route path="/faqs" element={<FAQs />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

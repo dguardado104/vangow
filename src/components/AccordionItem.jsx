@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default function AccordionItem({title, children}){
-  const [isOpen, setIsOpen] = useState(false)
+export default function AccordionItem({title, children, open = false}){
+  const [isOpen, setIsOpen] = useState(open)
 
   const handleAccordion = () => {
     setIsOpen(!isOpen)
@@ -9,7 +9,7 @@ export default function AccordionItem({title, children}){
 
   return(
     <>
-      <button onClick={handleAccordion} className="bg-white text-xl border-t-[1px] flex justify-between items-center border-secondary p-4 gap-4 w-full">
+      <button onClick={handleAccordion} className="bg-white text-xl border-t-[1px] capitalize flex justify-between items-center border-secondary p-4 gap-4 w-full">
         {title}
         <img src="/icons/angle-up.svg" alt="icon" className={!isOpen ? 'rotate-180' : ''} width="13px" />
       </button>

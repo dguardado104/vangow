@@ -74,7 +74,6 @@ export default function LoginBager() {
       if (scrollPosition + windowHeight >= pageHeight - footer.scrollHeight) {
         setHideButton(true)
         setIsOpen(false)
-        console.log('Estás llegando al final de la página')
       }else{
         setHideButton(false)
       }
