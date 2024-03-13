@@ -15,7 +15,7 @@ export default function Footer() {
         {
           key: 2,
           label: 'Our story',
-          url: '/our-story'
+          url: '/about'
         },
         {
           key: 3,

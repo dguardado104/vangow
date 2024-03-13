@@ -12,6 +12,8 @@ import Destinations from "./pages/Destinatations"
 import Scheduling from "./pages/Scheduling"
 import Closing from "./pages/Closing"
 import Selling from "./pages/Selling"
+import Agents from "./pages/Agents"
+import About from "./pages/About"
 
 
 export default function App() {
@@ -30,6 +32,8 @@ export default function App() {
           <Route path="/scheduling" element={<Scheduling />} />
           <Route path="/closing" element={<Closing />} />
           <Route path="/selling" element={<Selling />} />
+          <Route path="/agents" element={<Agents />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
