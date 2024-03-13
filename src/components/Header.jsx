@@ -214,12 +214,9 @@ export default function Header() {
   }, [open])
 
   const shadow = {
+    WebkitBoxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)",
     boxShadow: "inset 0 50px 25px -10px rgba(0,0,0,0.7)"
   }
-
-  useEffect(() => {
-
-  }, [])
 
   return (
     <header style={shadow} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-16 xl:px-32 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
