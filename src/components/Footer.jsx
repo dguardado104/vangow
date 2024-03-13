@@ -152,7 +152,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className=" bg-primary text-white font-abc">
+    <footer className=" bg-[#3DB2BB] text-white font-abc">
       <div className="px-4 md:px-16 xl:px-32">
         <section className="flex flex-col md:flex-row gap-8 justify-between pt-8">
           <MultipleLinks items={items} />

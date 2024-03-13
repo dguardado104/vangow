@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 
 const baseUrl = import.meta.env.VITE_BASE_URL_API
@@ -9,6 +9,7 @@ export default function LoginBager() {
   })
   const [error, setError] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [hideButton, setHideButton] = useState(false)
 
   const handleInput = (e) => {
     const { name, value } = e.target
@@ -60,8 +61,34 @@ export default function LoginBager() {
 
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageHeight = document.documentElement.scrollHeight
+
+      const footer = document.querySelector("footer")
+
+      const scrollPosition = window.scrollY;
+
+      const windowHeight = window.innerHeight;
+
+      if (scrollPosition + windowHeight >= pageHeight - footer.scrollHeight) {
+        setHideButton(true)
+        setIsOpen(false)
+        console.log('Estás llegando al final de la página')
+      }else{
+        setHideButton(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <div className=" font-abc fixed bottom-0 left-1/2 -translate-x-1/2 z-50 bg-white max-w-[500px] w-full rounded-t-2xl">
+    <div className={` font-abc fixed bottom-0 left-1/2 -translate-x-1/2 z-50 bg-white max-w-[500px] w-full rounded-t-2xl ${hideButton ? 'hidden' : ''}`}>
       <button onClick={() => setIsOpen(!isOpen)} className="bg-primary text-white w-full rounded-t-2xl py-4 flex justify-center items-center gap-4 font-bold text-xl">
         Join our mailing list
         <img src="/icons/angle-down.svg" width="15px" alt="icon" className={isOpen ? '' : 'rotate-180'} />
