@@ -20,7 +20,7 @@ export default function Listings() {
       </div>
 
       <section>
-        <article className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 pb-4 mb-16">
+        <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4 pb-4 mb-16">
           <Card />
           <Card />
           <Card />

@@ -77,7 +77,7 @@ export default function Learns() {
           </ItemContent>
         </div>
       </section>
-      <section className="hidden md:block bg-[#f2f2f2] px-4 py-16">
+      <section style={{ backgroundImage: 'url(/bgs/hero-bg.svg)' }} className="hidden md:block bg-[#f2f2f2] px-4 py-16 bg-auto bg-no-repeat bg-right-bottom">
         <div className="flex justify-between max-w-7xl mx-auto">
           <div>
             <span className="font-made-outer text-3xl mb-4">Easy simple <br /> scheduling</span>
@@ -100,9 +100,9 @@ export default function Learns() {
             </ItemContent>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            <img src="/mobile-home.webp" alt="image" loading="lazy" />
-            <img src="/mobile-calendar.webp" alt="image" loading="lazy" />
-            <img src="/mobile-stays.webp" alt="image" loading="lazy" />
+            <img src="/mobile-home.svg" alt="image" loading="lazy" />
+            <img src="/mobile-calendar.svg" alt="image" loading="lazy" />
+            <img src="/mobile-stays.svg" alt="image" loading="lazy" />
           </div>
         </div>
 
