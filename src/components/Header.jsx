@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { Link, useLocation } from "react-router-dom"
 
-export default function Header() {
+export default function Header({ headerAnimation = false }) {
   const location = useLocation()
   const { pathname } = location
   const [open, setOpen] = useState(false)
@@ -241,7 +241,7 @@ export default function Header() {
   })
 
   return (
-    <header style={scrollBar} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-8 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
+    <header style={headerAnimation ? { backgroundColor: "#3DB2BB" } : scrollBar} id="header-nav" className={` font-abc fixed w-full top-0 shadow-inner z-40 flex justify-between py-4 md:py-5 px-4 md:px-8 transition-all duration-300 ${open ? 'after:w-full after:h-screen after:bg-black/30 after:fixed after:top-0 after:left-0' : ''}`}>
       <a href="/" className="block">
         <img src="/logo.svg" alt="image" />
       </a>

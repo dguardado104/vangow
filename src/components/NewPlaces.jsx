@@ -6,6 +6,12 @@ import { Link } from "react-router-dom"
 
 export default function NewPlaces() {
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0
+    })
+  }
+
   const settings = {
     dots: false,
     infinite: true,
@@ -68,7 +74,7 @@ export default function NewPlaces() {
       </Slider>
 
       <div className="flex justify-center pt-16">
-      <Link to={"/listings"} className=" text-white bg-primary py-3 px-8 rounded-lg  transition-all hover:scale-105 hover:bg-secondary">View listings</Link>
+      <Link to={"/listings"} onClick={scrollTop} className=" text-white bg-primary py-3 px-8 rounded-lg  transition-all hover:scale-105 hover:bg-secondary">View listings</Link>
 
       </div>
 

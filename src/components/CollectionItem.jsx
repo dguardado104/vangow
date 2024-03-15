@@ -7,8 +7,6 @@ export default function CollectionItem({ title, subtitle }) {
           <h3 className="font-bold text-xl font-abc-bold">{title}</h3>
           {subtitle ? <h4 className="italic">{subtitle}</h4> : '' }
         </div>
-
-
         <a href="#" className="text-primary font-bold hover:text-white">+</a>
       </div>
     </div>

@@ -5,14 +5,13 @@ export default function GetInTouch() {
         <span className="text-4xl md:text-7xl font-bold font-made-outer">Get<span className="font-nautica font-normal">In</span>Touch</span>
         <p className="w-[300px] text-center py-16">If you have any special requests, please let us know. Tell us who you are and what you would like to know about Vangow.</p>
 
-        <form action="#" className="flex flex-col gap-5">
-          <div className="flex flex-col">
+        <form action="#" className="flex flex-col gap-5 max-w-[300px] w-full">
+          <div className="flex flex-col gap-1">
             <label htmlFor="">Enter your email</label>
             <input type="email" placeholder="example@example.com" className="p-2 rounded-md text-secondary outline " required />
           </div>
           <div className="flex gap-4 md:gap-6">
-            <div>
-              <div className="flex flex-col md:flex-row gap-4 w-max">
+              <div className="grid grid-cols-3">
                 <div className="inline-flex items-center">
                   <label
                     className="relative flex items-center p-1 md:p-3 rounded-full cursor-pointer"
@@ -97,9 +96,11 @@ export default function GetInTouch() {
                   <span>I am an agent</span>
                 </div>
               </div>
-            </div>
           </div>
-          <button type="submit" className="text-white font-medium bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-primary-strong">Join</button>
+          <div className="flex justify-center">
+          <button type="submit" className="text-white font-medium bg-primary py-3 px-8 rounded-lg  transition-all uppercase hover:scale-105 hover:bg-primary-strong w-full mx-4">Join</button>
+          </div>
+          
         </form>
       </div>
     </section>

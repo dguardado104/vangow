@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import GetInTouch from "../components/GetInTouch"
 import AccordionItem from "../components/AccordionItem"
+import PublicLayout from "../layouts/PublicLayout"
 
 export default function FAQs() {
 
@@ -161,12 +162,12 @@ export default function FAQs() {
   ]
 
   useEffect(() => {
-    
+
     const handleScroll = () => {
-      
+
       if (window.scrollY <= 300) {
         setHeaderPosition(true)
-      }else{
+      } else {
         setHeaderPosition(false)
       }
     }
@@ -180,34 +181,37 @@ export default function FAQs() {
   }, [])
 
   return (
-    <main className="text-secondary font-abc mx-auto">
-      <header  className="mt-32 px-4 ">
-        <div className="md:border-b-[1px] border-secondary flex justify-between gap-4 flex-col items-center text-center md:text-left md:flex-row pb-8 md:pb-16">
-          <h1 className="font-made-outer text-3xl md:text-7xl">FAQs</h1>
-          <p className="w-[200px]">A concise guide addressing common queries, providing quick answers to streamline your understanding and enhance your experience with Vangow</p>
-        </div>
-      </header>
-      <article className="relative flex flex-col md:flex-row gap-8 px-4 py-16">
-        <div className="md:w-1/4 relative">
-          <nav className={`md:sticky ${ headerPosition ? 'sticky' : 'fixed top-16'}  overflow-x-auto categories_scroll bg-[#f9f9f9] md:bg-white left-0  md:top-24 gap-4 md:gap-0 p-4 flex md:flex-col items-start text-left w-full md:w-auto z-10`}>
-            {buttons.map(button => (
-              <button className={` flex-shrink-0 md:flex-shrink px-4 py-2 md:text-3xl font-abc-bold hover:scale-105 transition-all hover:text-secondary md:text-[#001925]/30 ${selectedButton === button.title ? '!text-secondary md:border-none border-[1px] border-secondary rounded-2xl' : ''}`} key={button.key} onClick={() => {
-                setSelectedButton(button.title)
-                window.scrollTo({
-                  top:350,
-                  behavior: 'smooth'
-                })
-              } }>{button.title}</button>
-            ))}
-          </nav>
-        </div>
+    <PublicLayout>
+      <main className="text-secondary font-abc mx-auto">
+        <header className="mt-32 px-4 ">
+          <div className="md:border-b-[1px] border-secondary flex justify-between gap-4 flex-col items-center text-center md:text-left md:flex-row pb-8 md:pb-16">
+            <h1 className="font-made-outer text-3xl md:text-7xl">FAQs</h1>
+            <p className="w-[200px]">A concise guide addressing common queries, providing quick answers to streamline your understanding and enhance your experience with Vangow</p>
+          </div>
+        </header>
+        <article className="relative flex flex-col md:flex-row gap-8 px-4 py-16">
+          <div className="md:w-1/4 relative">
+            <nav className={`md:sticky ${headerPosition ? 'sticky' : 'fixed top-16'}  overflow-x-auto categories_scroll bg-[#f9f9f9] md:bg-white left-0  md:top-24 gap-4 md:gap-0 p-4 flex md:flex-col items-start text-left w-full md:w-auto z-10`}>
+              {buttons.map(button => (
+                <button className={` flex-shrink-0 md:flex-shrink px-4 py-2 md:text-3xl font-abc-bold hover:scale-105 transition-all hover:text-secondary md:text-[#001925]/30 ${selectedButton === button.title ? '!text-secondary md:border-none border-[1px] border-secondary rounded-2xl' : ''}`} key={button.key} onClick={() => {
+                  setSelectedButton(button.title)
+                  window.scrollTo({
+                    top: 350,
+                    behavior: 'smooth'
+                  })
+                }}>{button.title}</button>
+              ))}
+            </nav>
+          </div>
 
-        <section ref={header} className={`grow  md:mt-0 ${ headerPosition ? '' : 'mt-24' }`}>
-          <ContentItem items={buttons.find(button => button.title === selectedButton)?.questions} />
-        </section>
-      </article>
-      <GetInTouch />
-    </main>
+          <section ref={header} className={`grow  md:mt-0 ${headerPosition ? '' : 'mt-24'}`}>
+            <ContentItem items={buttons.find(button => button.title === selectedButton)?.questions} />
+          </section>
+        </article>
+        <GetInTouch />
+      </main>
+    </PublicLayout>
+
   )
 }
 

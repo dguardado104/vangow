@@ -2,7 +2,7 @@ import AccordionItem from "../components/AccordionItem";
 import GetInTouch from "../components/GetInTouch";
 import PublicLayout from "../layouts/PublicLayout";
 
-export default function Terms() {
+export default function CandidatePrivacy() {
 
   const items = [
     {
@@ -119,8 +119,9 @@ export default function Terms() {
   return (
     <PublicLayout>
       <main className="text-secondary font-abc">
-        <header style={{ backgroundImage: 'url(/bgs/gray-bg.webp)' }} className=" h-80 bg-cover bg-center flex items-center justify-center">
-          <span className="font-bold text-3xl font-made-outer">Terms & conditions</span>
+        <header style={{ backgroundImage: 'url(/bgs/gray-bg.webp)' }} className=" h-80 bg-cover bg-center flex items-center justify-center flex-col">
+          <span className="font-bold text-3xl font-made-outer">Candidate privacy</span>
+          <span>Updated February 5, 2024</span>
         </header>
         <article className="max-w-7xl mx-auto py-16 px-4">
           {

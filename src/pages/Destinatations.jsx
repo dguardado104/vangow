@@ -3,6 +3,7 @@ import GetInTouch from "../components/GetInTouch"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import PublicLayout from "../layouts/PublicLayout";
 
 export default function Destinations() {
 
@@ -31,38 +32,40 @@ export default function Destinations() {
 
 
   return (
-    <main className="font-abc">
-      <header style={{ backgroundImage: 'url(/bgs/sky-transparent.webp)' }} className=" h-80 bg-primary bg-cover bg-center flex flex-col items-center justify-center">
-        <h1 className="font-bold text-3xl font-made-outer text-center mb-5"><span className="font-nautica font-normal text-5xl">Amazing</span><br className="md:hidden " />Destinations</h1>
-        <p className="max-w-[400px] text-center">Vangow makes co-ownership simple. You choose your dream home, and we manage it. Browse our collection of stunning homes to get started.</p>
-      </header>
-      <article className="py-16 px-4">
-        <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
-          <span className="font-made-outer">Beach destinations</span>
-        </div>
-        <Carousel items={beaches} />
-      </article>
-      <article className="py-16 px-4">
-        <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
-          <span className="font-made-outer">Ski destinations</span>
-        </div>
-        <Carousel items={beaches} />
-      </article>
-      <article className="py-16">
-        <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
-          <span className="font-made-outer">All destinations</span>
-        </div>
-        <section className="grid grid-cols-1 md:grid-cols-3 px-4 gap-4">
-          <CollectionItem title={"Beaches"} subtitle={"France"} />
-          <CollectionItem title={"Cities"} subtitle={"Italy"} />
-          <CollectionItem title={"Deserts"} subtitle={"Colorado"} />
-          <CollectionItem title={"Lakes"} subtitle={"Panama"} />
-          <CollectionItem title={"Mountains"} subtitle={"Grecee"} />
-          <CollectionItem title={"Winiries"} subtitle={"Panama"} />
-        </section>
-      </article>
-      <GetInTouch />
-    </main>
+    <PublicLayout>
+      <main className="font-abc">
+        <header style={{ backgroundImage: 'url(/bgs/sky-transparent.webp)' }} className=" h-80 bg-primary bg-cover bg-center flex flex-col items-center justify-center">
+          <h1 className="font-bold text-3xl font-made-outer text-center mb-5"><span className="font-nautica font-normal text-5xl">Amazing</span><br className="md:hidden " />Destinations</h1>
+          <p className="max-w-[400px] text-center">Vangow makes co-ownership simple. You choose your dream home, and we manage it. Browse our collection of stunning homes to get started.</p>
+        </header>
+        <article className="py-16 px-4">
+          <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
+            <span className="font-made-outer">Beach destinations</span>
+          </div>
+          <Carousel items={beaches} />
+        </article>
+        <article className="py-16 px-4">
+          <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
+            <span className="font-made-outer">Ski destinations</span>
+          </div>
+          <Carousel items={beaches} />
+        </article>
+        <article className="py-16">
+          <div className="flex justify-center text-center pb-8 text-2xl md:text-4xl">
+            <span className="font-made-outer">All destinations</span>
+          </div>
+          <section className="grid grid-cols-1 md:grid-cols-3 px-4 gap-4">
+            <CollectionItem title={"Beaches"} subtitle={"France"} />
+            <CollectionItem title={"Cities"} subtitle={"Italy"} />
+            <CollectionItem title={"Deserts"} subtitle={"Colorado"} />
+            <CollectionItem title={"Lakes"} subtitle={"Panama"} />
+            <CollectionItem title={"Mountains"} subtitle={"Grecee"} />
+            <CollectionItem title={"Winiries"} subtitle={"Panama"} />
+          </section>
+        </article>
+        <GetInTouch />
+      </main>
+    </PublicLayout>
   )
 }
 

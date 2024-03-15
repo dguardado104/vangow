@@ -170,7 +170,7 @@ export default function Footer() {
                 <img src="/icons/play.svg" alt="icon" width="160px" className="hover:scale-105 transition-all" loading="lazy" />
               </a>
             </div>
-            <nav className="flex gap-4 py-8">
+            <nav className="flex justify-center gap-4 py-8">
             {
               socialLinks.map(link => (
                 <a href={link.url} key={link.key} className="hover:scale-105 transition-all">{link.label}</a>

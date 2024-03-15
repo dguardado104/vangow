@@ -1,9 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Learns from "./pages/Learns"
-import Header from "./components/Header"
 import PageNotFound from "./pages/PageNotFound"
-import Footer from "./components/Footer"
 import LoginBager from "./components/LoginBager"
 import Terms from "./pages/Terms"
 import Listings from "./pages/Listings"
@@ -15,13 +13,14 @@ import Selling from "./pages/Selling"
 import Agents from "./pages/Agents"
 import About from "./pages/About"
 import FAQs from "./pages/FAQs"
-
+import Privacy from "./pages/Privacy"
+import CandidatePrivacy from "./pages/CandidatePrivacy"
 
 export default function App() {
 
   return (
       <BrowserRouter>
-        <Header />
+        
         <LoginBager />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,9 +35,11 @@ export default function App() {
           <Route path="/agents" element={<Agents />} />
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<FAQs />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/candidate-privacy" element={<CandidatePrivacy />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-        <Footer />
+        
       </BrowserRouter>
   )
 }
