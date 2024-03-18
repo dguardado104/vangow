@@ -117,7 +117,7 @@ export default function Terms() {
   ]
 
   return (
-    <PublicLayout>
+    <PublicLayout headerAnimation>
       <main className="text-secondary font-abc">
         <header style={{ backgroundImage: 'url(/bgs/gray-bg.webp)' }} className=" h-80 bg-cover bg-center flex items-center justify-center">
           <span className="font-bold text-3xl font-made-outer">Terms & conditions</span>
