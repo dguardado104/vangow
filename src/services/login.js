@@ -38,10 +38,92 @@ const createSession = async (data) => {
 
     return session.tk
   } catch (error) {
-    console.error('Error al crear sesión:', error)
+    console.error(error)
     throw error
   }
 }
 
+const verifyOpt = async (data) => {
 
-export default { createSession }
+  try {
+
+    const session = JSON.parse(localStorage.getItem('vangowSession'))
+
+    const response = await axios({
+      method: 'post',
+      url: `${baseUrl}/login/verify`,
+      data: {
+        "otp": {
+          "code": data,
+          "token": session.tk
+        }
+      }
+    })
+
+    const { attributes } = response.data.data
+
+    localStorage.setItem('vangowSession', JSON.stringify(attributes))
+
+    return true
+
+  } catch (error) {
+    console.error(error)
+    throw error
+  }
+
+}
+
+const destroySession = async () => {
+
+  try {
+
+    const session = JSON.parse(localStorage.getItem('vangowSession'))
+
+    const response = await axios({
+      method: 'post',
+      url: `${baseUrl}/login/logout`,
+      headers: {
+        Authorization: `Bearer ${session.jwt}`
+      }
+    })
+
+    console.log(response);
+    localStorage.removeItem('vangowSession')
+
+    return true
+
+  } catch (error) {
+    console.error(error)
+    throw error
+  }
+
+}
+
+const resendOtp = async () => {
+
+  const session = JSON.parse(localStorage.getItem('vangowSession'))
+
+  try {
+    const response = await axios({
+      method: 'post',
+      url: `${baseUrl}/login/resend`,
+      data: {
+        "otp": {
+          "token": session.tk
+        }
+      }
+    })
+
+    const { attributes } = response.data.data
+
+    localStorage.setItem('vangowSession', JSON.stringify(attributes))
+
+    return true
+
+  } catch (error) {
+    console.error(error)
+    throw error
+  }
+}
+
+export default { createSession, verifyOpt, resendOtp, destroySession }

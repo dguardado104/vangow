@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"
 import login from "../../services/login"
+import { Link } from "react-router-dom"
+import VerificationInput from "react-verification-input"
 
 export default function Login() {
-  const [data, setData] = useState({email: ''})
+  const [data, setData] = useState({ email: '' })
   const [error, setError] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [hideButton, setHideButton] = useState(false)
@@ -33,7 +35,7 @@ export default function Login() {
         setVerifyStep(true)
       }
     } catch (error) {
-      console.error('Error al crear sesión:', error)
+      console.error(error)
     }
   };
 
@@ -95,7 +97,71 @@ export default function Login() {
 
 
 function VerifyStep() {
+  const [disable, setDisable] = useState(false)
+  
+
+  const handleCode = async (e) => {
+    try {
+      const res = await login.verifyOpt(e)
+
+      if(res){
+        return ''
+      }
+      
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const resendCode = async () => {
+    try {
+      const res = await login.resendOtp()
+
+      if(res){
+        setDisable(true)
+        setTimeout(() => {
+          setDisable(false)
+        }, 10000);
+      }
+
+
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
-    <></>
+    <div className="fixed font-abc bg-black/30 z-40 h-screen w-screen flex justify-center items-center">
+      <div className="bg-white max-w-[500px] rounded-2xl">
+        <header className="bg-primary text-white rounded-t-2xl p-4">
+          <h3 className="text-2xl">Welcome to Vangow</h3>
+        </header>
+        <article className="flex flex-col px-4 gap-8 py-8">
+          <section >
+            <div>
+              <strong className="font-abc-bold text-xl">Check your email</strong>
+              <p>Unlock full pricing details, personalize your experience, save favorites and more.</p>
+            </div>
+          </section>
+          <section className="border-y-[1px] py-8 border-[#ccc]" >
+            <div className="flex items-center justify-center flex-col gap-4">
+              <strong>Enter the code we&apos;ve sent by email</strong>
+              <div>
+                <VerificationInput classNames={{
+                  character: "bg-[#f2f2f2] rounded-lg border-none outline-none text-[#787878]"
+                }} validChars="0-9" onComplete={handleCode} inputProps={{ inputMode: "numeric" }} />
+              </div>
+              <span>Haven&apos;t received. <button onClick={resendCode} className={`underline ${disable ? 'text-secondary/10' : ''}`} disabled={disable} >Send again</button></span>
+            </div>
+
+          </section>
+          <section className="text-center">
+            <h3 className="font-abc-bold">VANGOW</h3>
+            <p>I give Vangow permission to contact me & me agree to the <Link to={"/terms"} className="underline">terms</Link>. This site is protected by reCAPTCHA and the Google <Link className="underline">privacy policy</Link>, <Link className="underline">terms of service</Link> and <Link className="underline">mobile terms</Link></p>
+          </section>
+        </article>
+
+      </div>
+    </div>
   )
 }
