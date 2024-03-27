@@ -19,6 +19,8 @@ import { useEffect, useState } from "react"
 import Contact from "./pages/Contact"
 import Blog from "./pages/Blog"
 import Communities from "./pages/Communities"
+import Profile from "./pages/users/Profile"
+import Detail from "./pages/Detail"
 
 export default function App() {
   const [user, setUser] = useState(null)
@@ -48,6 +50,9 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/communities" element={<Communities />} />
+        <Route path="/detail" element={<Detail />} />
+        {/* Pivate routes */}
+        <Route path="/users/profile" element={<Profile />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 
